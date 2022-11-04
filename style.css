@@ -23,6 +23,7 @@ h2{font-size: 2.7em;}
 h3{font-size: 2em;}
 p{font-size: 1.25em;}
 ul{list-style: none;}
+
 .head{
 
     width: 100%;
@@ -30,10 +31,10 @@ ul{list-style: none;}
     background-color: black;
     position: fixed;
     z-index: 10;
-    top: 0;
-    left: 0;
     
-
+    /*
+    display: flex;
+    flex-wrap: wrap;*/
 }
 .logo{
     display: flex;
@@ -48,10 +49,11 @@ ul{list-style: none;}
 a{
     color: white;
     text-decoration: none;
-    margin-top: 20px;
+    margin-top: 18px;
+    font-size: 10px;
 }
 nav a{
-    color: bwlack;
+    color: white;
     text-decoration: none;
     display: inline-block;
     padding: 10px 15px;
@@ -64,6 +66,7 @@ nav a:hover{
     color: #30e298;
     border-bottom: 4px solid #30e298;
 }
+/*
 @media(max-width:700px){
     header{
         flex-direction: column;
@@ -72,65 +75,59 @@ nav a:hover{
         padding: 10px 0px;
     }
 }
+*/
 button{
-    font-size: 0.5em;
+    font-size: 15px;
     font-weight: bold;
     padding:10px 20px;
     border-radius: 10px;
     border:2px solid rgba(0,0,0,0.5);
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    color: white;
+    color: rgb(0, 0, 0);
     background-color: #30e298;
      margin: 30px;
 
 }
 
-button:hover{
-    background-color: #2ef1c7;
-}
- .title{
-    margin-bottom: 40px;
-    font-size: 40px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: black;
+/*Index - Slogan inicial*/
 
-}
-.nombre-empresa{
-    font-size: 1.5em ;
-    margin: 0;
-    font-weight: 400;
-    font-size: 24px;
-    cursor: default;
-}
-.container{
-    max-width: 1000px;
-    margin:auto;
-}
-
-#firstsection{
+#Slogan-Inicial{
     display: flex; 
     align-items: center;
     justify-content: center;
     text-align: center;
     background-position: center center;
-    height:100vh;
+    height:1000px;
     color: white;
-    background:url("image/carros00.jpg");
+    min-width: 250px;
+    width: 100%;
+    background: #34e89e; 
+    background: -webkit-linear-gradient(to right, #07181f69, #34e89d86), url("image/Fondo2.png"); 
+    background: linear-gradient(to right, #091d2577, #34e89d88), url("image/Fondo2.png"); 
+    
     background-size: cover;
-    background-repeat: no-repeat;
-
+    background-attachment: fixed;
+    position: relative;
+}
+#Slogan-Inicial .container{
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
-#firstsection .presentation h2{
+#Slogan-Inicial .presentation h2{
     margin: 0;
-    font-size: 4em;
+    font-size: 96px;
     color: #30e298;
 }
-#firstsection .image-dowload{
-    display: flex;
+
+#Slogan-Inicial .Olas{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
-#firstsection .img-appstore{
+/*
+#Slogan-Inicial .img-appstore{
     background-image: url("image/appstore.png");
     background-size: 150px;
     border-radius: 10px;
@@ -139,10 +136,11 @@ button:hover{
     height: 70px;
     margin-bottom: 5px;
     background-repeat: no-repeat;
+    margin-right: 50px;
 
 }
-#firstsection .img-playstore{
-    background-image: url("image/playstore.png");
+#Slogan-Inicial .img-playstore{
+    background-image: url("image/Googleplay.png");
     background-size: 150px;
     border-radius: 10px;
     border-color: white;
@@ -150,166 +148,215 @@ button:hover{
     width: 200px;
     height: 70px;
     background-repeat: no-repeat;
-
-
-}
-#secondsection{
-    height: 90vh;
-    background-color: rgb(0, 0, 0);
+    margin-right: 50px;
 
 }
-#secondsection .container{
+*/
+#Slogan-Inicial .container .image-dowload{
     display: flex;
+    justify-content: center;
+}
+.container .img-1{
+    width: 200px;
+    height: 200px;
+}
+.container .img-2{
+    width: 200px;
+    height: 200px;
+}
+
+/*Caracteristicas--------------*/
+
+
+#Caracteristicas {
+    background-color:  #ffffff;
+    height: 920px;
+    background: linear-gradient(to bottom, rgb(0, 214, 125), rgb(30, 209, 155));
+    display: flex;
+    justify-content: center;
     text-align: center;
-    padding: 0px 30px;
-    top: -60px;
-}
-#secondsection h2{
-    margin: 10px;
-    font-size: 3em;
-    color: white;
-}
-#secondsection p{
-    margin:0;
-    font-size: 1.4em;
-    color: white;
-
-}
-#secondsection p{
-    text-align: justify;
-    font-family: 'Montserrat', sans-serif;
-
 }
 
-#secondsection .mision-vision{
-    padding: 0px 5px;
+#Caracteristicas .container .imagenPrincipal img{
+    width: 1250px;
+    height: 833.25px;
+    left: 100px;
+    margin-left: -750px;
 }
 
-#secondsection .imagen-mision{
-    display: flex;
-    background-image: url("image/carros01.png");
-    background-size: cover;
-    background-position: center;
-    width: 600px;
-    height: 200px;
-        
 
+
+#Ola_caracteristicas .Olas{
+    
+    position: static;
+    bottom: 1;
+    width: 100%;
+    margin-top: -50px;
 }
-#secondsection .mision{
-    display: flex;
+
+#Ola_caracteristicas .Olas{
+    
+    background-color: rgb(30, 209, 155)
+}
+
+#Caracteristicas .container .Cuadrados .Seccion .Cuadros h2{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: -24px;
+    margin-top: -50px;
+}
+
+
+#Caracteristicas .container .Cuadrados .Seccion .Cuadros p{
+
+    font-size: 15px;
+    margin-top: 25px;
+    width: 160px;
     justify-content: center;
-}
-#secondsection .texto-mision{
-    width: 85%;
-    text-align: justify;
-    padding: 0px 30px;
-    max-width: 700px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-#secondsection .imagen-vision{
-    background-image: url("image/carros02.png");
-    background-size: cover;
-    background-position: center center;
-    width: 600px;
-    height: 200px;
-}
-#secondsection .vision{
-    display: flex;
-    justify-content: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: -50px;
     
 }
-#secondsection .texto-vision{
-    width: 85%;
-    font-family: 'Montserrat', sans-serif;
-    text-align: justify;
-    padding: 0px 30px;
-    max-width: 700px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-#thirdsection-1{
-    background-color:  #070707;
-    height: 15vh;
-    color: rgb(255, 255, 255);
+#Caracteristicas .container .Cuadrados .Seccion .Cuadros{
+    width: 200px;
+    height: 250px;
+    
+    margin: 50px;
+    padding: 75px;
     text-align: center;
+    background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+
+    justify-content: center;
     align-items: center;
-}
-#thirdsection-1 h1{
-    margin: 0;
+
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.50);
+
 }
 
-#thirdsection-2{
-    height: 140vh;
+#Caracteristicas .container .Cuadrados {
+    
+    justify-content: center;
+    
+    max-width: 800px;
+    align-items: center;
+
+    margin-left: 47%;
+    margin-top: -100%;
+}
+
+#Caracteristicas .container .Cuadrados .Seccion{
+    display: flex;
+    margin: auto;
+}
+
+#Caracteristicas h1{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#Caracteristicas p{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    
+}
+/*Testimonios-------------*/
+
+#thirdsection-1{
+    height: 830px;
     background-color: #000000;
     margin: auto;
 }
-#thirdsection-2 .image-testimonio1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-position: center center;
-    height:70vh;
-    color: rgb(0, 0, 0);
-    background-image:url("image/conductor.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
-#thirdsection-2 .container{
-    font-family: 'Montserrat', sans-serif;    
+#thirdsection-1 .container{
     box-sizing: border-box;
-    max-width: 1400px;
     display: flex;
     justify-content: center;
     margin-top: 80px;
 }
-#thirdsection-2 .testimonio{
-    width: 270px;
+
+#thirdsection-1 .Testimonios_texto{
+    margin: auto;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#thirdsection-1 .testimonio{
+    width: 380px;
+    height: 500px;
     margin: 50px;
-    padding: 20px;
+    padding: 75px;
     text-align: center;
     background:#30e298;
-    border-radius: 10px;
+    border-radius: 15px;
     color: rgb(0, 0, 0);
-    box-shadow: 0px 0px 25px 5px white;
 }
-.foto-perfil1,.foto-perfil2,.foto-perfil3{
-    width: 120px;
-    height: 120px;
+
+#thirdsection-1 .container .testimonio p{
+    margin-top: -80px;
+}
+
+#thirdsection-1 .container .testimonio h3{
+    margin-top: 25px;
+    font-size: 2rem;
+}
+
+#thirdsection-1 .container .testimonio h4{
+    font-size: 1.0rem;
+    margin-top: 25px;
+}
+
+#thirdsection-1 .container .testimonio .icons{
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    margin-top: 25px;
+}
+
+.foto-perfil1,.foto-perfil2,.foto-perfil3, .foto-perfil4{
+    width: 180px;
+    height: 180px;
     background-position: center;
     background-size: cover;
     margin: auto;
     border-radius: 50%;
     position: relative;
-    top: -60px;
+    top: -120px;
     box-shadow: 0px 0px 30px -5px rgb(255, 255, 255);
 }
-#thirdsection-2 .foto-perfil1{
+#thirdsection-1 .foto-perfil1{
     background-image: url("image/nayde.jpg");
 }
 
-#thirdsection-2 .foto-perfil2{
+#thirdsection-1 .foto-perfil2{
     background-image: url("image/Perfil2.jpg");
 }
 
-#thirdsection-2 .foto-perfil3{
+#thirdsection-1 .foto-perfil3{
     background-image: url("image/Perfil1.jpg");
+}
+#thirdsection-1 .foto-perfil4{
+    background-image: url("image/Perfil3.jpg");
 }
 .testimonio h1{
     margin-top: -20px;
     font-size: 0.1em;
 }
 
-#thirdsection-2 .testimonio p{
+#thirdsection-1 .testimonio p{
     margin-top: 10px;
-    font-size: 0.8em;
+    font-size: 15px;
     font-weight: bold;
-    margin-top: -40px;
+    margin-top: 40px;
     
 }
 .foursection{
@@ -325,48 +372,88 @@ button:hover{
      margin-top: 30PX;
      margin-bottom: 60px;
      text-align: center;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #foursection H2{
 
     color: white;
      text-align: center;
      margin-bottom: 5px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #foursection H3{
 
     color: white;
      text-align: center;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/*Nosotros-----*/
+
+/*
 #fivesection{
     display: flex; 
     align-items: center;
     justify-content: center;
     text-align: center;
     background-position: center center;
-    height:50vh;
-    color: white;
-    background-color: black;
+    height:900px;
+    background: linear-gradient(to bottom, rgb(30, 209, 155), white);
     background-size: cover;
     background-repeat: no-repeat;
 
+}*/
+
+#fivesection {
+    background: linear-gradient(to bottom, rgb(30, 209, 155), white);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
-#fivesection .nosotros h2{
-    margin: 0;
-    font-size: 2em;
-    color: #ffffff;
-    margin-bottom: 20px;
+#fivesection .container .nosotros{
+    text-align: left;
+    padding: 200px 40px;
+    justify-content: center;
+    /*
+    max-width: 400px;
+    display: flex;
+    */
 }
 
+#fivesection .container .nosotros h2{
+  
+    text-align: left;
+    padding-right: 500px;
+
+    margin-left: 10%;
+}
+
+#fivesection .container .nosotros p{
+
+    text-align: left;
+    padding-right: 500px;
+    width: 900px;
+    margin-top: 60px;
+    margin-left: 10%;
+}
+
+#fivesection .container .nosotros .img-container{
+
+    padding-left: 900px;
+    margin-top: -400px;
+    height: 400px;
+    width: 400px;
+}
+
+/*Testimonios-----*/
+
 #plana{
-    height: 175vh;
-    background-color: #000000;
+    height: 760px;
+    background-color: #2e4880;
     margin: auto;
     
 }
+
 #plana .image-testimonio1{
     display: flex;
     flex-direction: column;
@@ -374,25 +461,24 @@ button:hover{
     align-items: center;
     text-align: center;
     background-position: center center;
-    height:70vh;
-    color: rgb(0, 0, 0);
-    background-image:url("image/conductor.jpg");
+    /*height:80vh;
+    color: rgb(82, 177, 82);*/
+
+    /*background-image:url("image/conductor.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
 }
+
 #plana .title{
     color: #30e298;
-    margin-top: 40px;
+    margin-top: 80px;
 }
 #plana .container{
-    font-family: 'Montserrat', sans-serif;    
     box-sizing: border-box;
-    max-width: 1400px;
     
     display: flex;
     justify-content: center;
     margin-top: 80px;
-    margin-top: -30px;
 }
 #plana .testimonio{
     width: 270px;
@@ -401,10 +487,10 @@ button:hover{
     text-align: center;
     text-align: center;
     justify-content: center;
-    background:#2ef1c7;
+    background:#30e298;
     border-radius: 10px;
     color: rgb(12, 12, 12);
-    box-shadow: 0px 0px 20px 5px white;
+    /*box-shadow: 0px 0px 20px 5px white;*/
 }
 .foto-perfil_01,.foto-perfil_02,.foto-perfil_03, .foto-perfil_04 , .foto-perfil_05{
     width: 120px;
@@ -438,6 +524,7 @@ button:hover{
     font-weight: bold;
     
 }
+
 .foursection{
     height: 20vh;
     background-color: #000000;
@@ -445,93 +532,195 @@ button:hover{
     font-size: 0.3em;
     
 }
-#fivesection p{
-    width: 100%;
-    text-align: justify;
-    padding: 2px 30px;
-    max-width: 800px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-     color: #f4f5f5;
-      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-li{
-}
+/*Mision y Vision------------*/
 
-#sixsection{
-    height: 50vh;
-    background-color: #000000;
-    margin: auto;
-}
-#sixsection .container{
-    display: flex;
-   margin-top:0px;
-}
-.seccion01, .seccion02 , .seccion03 , .seccion04{
-    margin-left: 100px;
-}
-#sixsection .seccion04{
-    font-size: 1.2em;
-
-}
-#sixsection .image-testimonio1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-position: center center;
-    height:70vh;
-    color: rgb(255, 255, 255);
-    background-image:url("image/nosotros.png");
+#secondsection{
+    height: 600px;
+    /*background-color: #30e298;*/
+    background: linear-gradient(to bottom, rgb(30, 209, 155), rgb(255, 255, 255));
     background-size: cover;
     background-repeat: no-repeat;
-}
-#seccion04 .ul{
-    font-size: 0.1em;
-    margin-top: -20px;
-    color: #14d8c8;
 
 }
+#secondsection .container{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 0px 30px;
+    top: -60px;
+    justify-content: center;
+}
+#secondsection h2{
+    margin: 10px;
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+}
+#secondsection p{
+    margin:0;
+    font-size: 1.4em;
+    color: rgb(0, 0, 0);
 
+}
+#secondsection p{
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 
-#sixsection H2{
+}
+
+#secondsection .mision-vision{
+    padding: 0px 5px;
+}
+
+#secondsection .imagen-mision{
+    display: flex;
+    background-image: url("image/carros01.png");
+    background-size: cover;
+    background-position: center;
+    width: 600px;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.50);
+
+}
+#secondsection .mision{
+    display: flex;
+    justify-content: center;
+}
+#secondsection .texto-mision{
+    width: 85%;
+    text-align: justify;
+    padding: 0px 30px;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#secondsection .imagen-vision{
+    background-image: url("image/carros02.png");
+    background-size: cover;
+    background-position: center center;
+    width: 600px;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.50);
+}
+#secondsection .vision{
+    display: flex;
+    justify-content: center;
+    
+}
+#secondsection .texto-vision{
+    width: 85%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    padding: 0px 30px;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*Pie de pagina - Footer*/
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: #000000;
+    margin: auto;
+    padding: 20px
+}
+footer .container{
+    display: flex; /*Columnas una de otras*/
+    flex-wrap: wrap; /*Columnas debajo de otras*/
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer .seccion{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    line-height:0;
+}
+
+footer .seccion .logo img{
+    width: 80px;
+    height: 80px;
+}
+
+footer H2{
 
     color: white;
-     margin-top: 30px;
-     margin-bottom: 10px;
-     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+footer .seccion a{
+
+    color: rgb(184, 184, 184);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: auto;
+    margin-right: auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+footer .seccion a:hover{
+    opacity: 0.8;
+}
+footer .seccion a .fab{
+    font-size: 12px;
+    
+}
+
+footer H3{
+
+    color: white;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+}
+
+footer .Copyright{
+    max-width: 1400px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 50px;
+}
+
+footer .Copyright p{
+
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+footer .Copyright hr{
+
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+/*
+.Copyright H2{
+
+    color: white;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    text-align: center;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-;
-    font-size: 1.2em;
+    font-size: 12px;
 }
-#sixsection a{
+*/
 
-    color: white;
-     margin-top: 30px;
-     margin-bottom: 10px;
-     padding: auto;
-     text-align: center;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-;
-    font-size: 0.5em;
-}
-#sixsection H3{
-
-    color: white;
-     text-align: center;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1em;
-}
-.seccion05 H2{
-
-    color: white;
-     margin-top: 30px;
-     margin-bottom: 10px;
-     text-align: center;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-;
-    font-size: 0.7em;
-}
- hr{
+ /*hr{
 
     position: relative;
     top: 20px;
@@ -540,22 +729,20 @@ li{
     background:#848887;
     margin-bottom: 50px; 
 
-}
+}*/
+
+/*Proyecciones--------------*/
 
 #sevensection{
 
 
     height:150vh;
     color: rgb(0, 0, 0);
-    background-color: #000000;
+    background-color: #cfa4a4;
     background-size: cover;
     background-repeat: no-repeat;
     
 
-}
-#sevensection .title{
-    color:#30e298;
-    margin-top: 80px;
 }
 
 #sevensection .foto-perfil{
@@ -618,6 +805,9 @@ li{
 
     
 }
+
+/*-------------------*/
+
 
 #eightsection{
     display: flex; 
@@ -1048,10 +1238,9 @@ li{
     text-align: center;
     background-position: center center;
     height:110vh;
-    color: rgb(223, 211, 211);
+    background: linear-gradient(to bottom, rgb(30, 209, 155), rgb(107, 151, 26));
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #000000;
 
 }
 #doceavsection .title{
@@ -1096,7 +1285,7 @@ li{
     border: none;
     outline: none;
     border-bottom: 1px solid rgb(250, 243, 243);
-    font-family: 'Roboto', sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #form_01 .form_label{
     color: #ffffff;
