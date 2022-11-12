@@ -15,15 +15,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
-   
-
+    <link rel=”shortcut icon” href=”favicon.ico” mce_href=”favicon.ico” type=”image/x-icon” />
+    <script src="//code.tidio.co/pxx6shjqpekorbhbuiwhzwyx9l73tmqj.js" async></script>
 
 </head>
 
 <body>
-
-<!-- Barra de navegación-->
-
+    <!-- Barra de navegación-->
     <div class="head">
         <div class="logo">
             <a href="#" class="logo">
@@ -31,16 +29,55 @@
                 <h2 class="nombre-empresa">SAFE PARKING</h2>
             </a>
         </div>
-
         <nav class="menu">
-            <a href="Index.html" class="nav-link">INICIO</a>
-            <a href="NOSOTROS.html" class="nav-link">NOSOTROS</a>
-            <a href="PROYECCIONES.html" class="nav-link">PROYECCIONES</a>
-            <a href="PARKEA.html" class="nav-link">PARKEA YA!</a>
-            <a href="GANA.html" class="nav-link">GANA CON NOSOTROS</a>
-            <a href="CONTACTANOS.html" class="nav-link">CONTÁCTANOS</a>
+            <input type="checkbox" id ="check">
+            <label for ="check" class = "checkbtn"> 
+
+                <i class="fa-solid fa-bars"></i>
+
+            </label>
+            <ul>
+                <li><a href="Index.html" class="nav-link">INICIO</a>
+                    <ul>
+                        <li><a href="#Slogan-Inicial" class="sub-nav-link">Home</a></li>
+                        <li><a href="#Caracteristicas" class="sub-nav-link">Caracteristicas</a></li>
+                        <li><a href="#Segmentos" class="sub-nav-link">Segmentos</a></li>
+                        <li><a href="#thirdsection-1" class="sub-nav-link">Testimonios</a></li>
+                    </ul>   
+                </li>
+                <li><a href="NOSOTROS.html" class="nav-link">NOSOTROS</a>
+                    <ul>
+                        <li><a href="#fivesection" class="sub-nav-link">Nosotros</a></li>
+                        <li><a href="#secondsection" class="sub-nav-link">Vision y Mision</a></li>
+                        <li><a href="#plana" class="sub-nav-link">Desarrolladores</a></li>
+                    </ul>   
+                </li>
+                <li><a href="PROYECCIONES.html" class="nav-link">PROYECCIONES</a>
+                    <ul>
+                        <li><a href="#sevensection01" class="sub-nav-link">Satisfacer</a></li>
+                        <li><a href="#sevensection02" class="sub-nav-link">Top</a></li>
+                    </ul> 
+                </li>
+                <li><a href="CONTACTANOS.html" class="nav-link">CONTÁCTANOS</a>
+                    <ul>
+                        <li><a href="#doceavsection" class="sub-nav-link">Registro</a></li>
+                        <li><a href="#treceavsection" class="sub-nav-link">Ubicanos</a></li>
+                    </ul> 
+                </li>
+                <li>
+                    <div>
+                        <a href="CONTACTANOS.html" class="sub-nav-link"> USUARIOS</a>              
+                    </div>
+                    <ul>
+                        <li><a href="GANA.html" class="sub-nav-link">Arrendador</a></li>
+                        <li><a href="PARKEA.html" class="sub-nav-link">Conductor</a></li>
+                    </ul> 
+                </li>
+            </ul>
+            
         </nav>
     </div>
+
 
 
 <!--Logo inicial y eslogan-->
@@ -56,19 +93,23 @@
 
             </div>
             <div class="download-app">
-                <button><strong>Descárgalo gratis</strong></button>
+                <a href="">
+                    <button><strong>Descárgalo gratis</strong></button>
+                  </a> 
+               
                 <p> Disponible en:</p>
                 <br>
                 <div class="image-download">
-                    <img class = "img-1" src="image/Googleplay.png" alt = "">
-                    <img class = "img-1" src="image/Appstore.png" alt = "">
+
+                    <a title="Play Store" href="https://play.google.com/store/games?hl=es&pli=1" target = "_blank"><img class = "img-1" src="image/1_Playstore.png" alt = ""></a>
+                    <a title="Apple Store" href="https://www.apple.com/la/app-store/" target = "_blank"><img class = "img-2" src="image/2_Applestore.png" alt = ""></a>
                 </div>
             </div>
 
 
         </div>
 
-        <div class = "Olas" style ="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-52.20,-39.94 C286.96,318.27 220.93,-184.02 539.21,90.30 L574.77,213.66 L0.00,150.00 Z" style="stroke: none; fill: rgb(0, 214, 125);"></path></svg></div>
+        <div class = "Olas" style ="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-52.20,-39.94 C286.96,318.27 220.93,-184.02 539.21,90.30 L574.77,213.66 L0.00,150.00 Z" style="stroke: none; fill:rgb(0, 214, 125);"></path></svg></div>
     </section>
 </head>
    
@@ -80,51 +121,60 @@
     <head>
         <section id="Caracteristicas">
             <div class="container">
-                <h1>Características</h1>
-                <p>¿Por qué elegir Safe Parking?</p>
+                <div class="titulo">
+                    <h1>Características</h1>
+                    <p>¿Por qué elegir Safe Parking?</p>
 
-                <div class="imagenPrincipal">
-                    <img class = "img-1" src="image/iPhone.png" alt = "">
                 </div>
-
-                <div class ="Cuadrados">
-
-                    <div class = "Seccion" >
-                        <div class="Cuadros">
-                            <h2>Seguridad</h2>
-                            <p>Estacionamientos verificados a detalle y cámaras de vigilancia en todo momento. Además, ponemos medidas de protección contra el COVID-19 para que viajas sin preocupaciones.</p>
-                            
+                <div class="contenido">
+                    <div class="imagenPrincipal">
+                        <img class = "img-1" src="image/iPhone.png" alt = "">
+                    </div>
+    
+                    <div class ="Cuadrados">
+    
+                        <div class = "Seccion" >
+                            <div class="Cuadros">
+                                <h2>Seguridad</h2>
+                                <p>Estacionamientos verificados a detalle y cámaras de vigilancia en todo momento. Además, ponemos medidas de protección contra el COVID-19 para que viajas sin preocupaciones.</p>
+                                
+                            </div>
+                            <div class="Cuadros">
+                                <h2>Accesible</h2>
+                                <p>Con los precios más accesibles en el mercado reserva el estacionamiento de tu preferencia</p>
+                            </div>
+                            <div class="Cuadros">
+                                <h2>Calidad</h2>
+                                <p>Estacionamientos de gran calidad, modernos y posibilidad de elegir tus preferencias de reserva</p>
+                            </div>
                         </div>
-                        <div class="Cuadros">
-                            <h2>Accesible</h2>
-                            <p>Con los precios más accesibles en el mercado reserva el estacionamiento de tu preferencia</p>
-                        </div>
-                        <div class="Cuadros">
-                            <h2>Calidad</h2>
-                            <p>Estacionamientos de gran calidad, modernos y posibilidad de elegir tus preferencias de reserva</p>
+    
+                       
+                        <div class = "Seccion" >
+                            <div class="Cuadros">
+                                <h2>Claridad</h2>
+                                <p>Siempre te mostramos el precio antes de reservar el estacionamiento para que tú decidas donde aparcar tu vehículo. Sin sorpresas.</p>
+                                
+                            </div>
+                            <div class="Cuadros">
+                                <h2>Luxi</h2>
+                                <p>Estacionamientos premiun, lugares con estilo, eleva tu experiencia de reserva con establecimientos modernos y comodos</p>
+                                
+                            </div>
+                            <div class="Cuadros">
+                                <h2>Comodidad</h2>
+                                <p>Los estacionamientos más cómodos para tu vehiculo, reserva lo mejor para tu vehículo</p>
+                                
+                            </div>
                         </div>
                     </div>
 
-                   
-                    <div class = "Seccion" >
-                        <div class="Cuadros">
-                            <h2>Claridad</h2>
-                            <p>Siempre te mostramos el precio antes de reservar el estacionamiento para que tú decidas donde aparcar tu vehículo. Sin sorpresas.</p>
-                            
-                        </div>
-                        <div class="Cuadros">
-                            <h2>Luxi</h2>
-                            <p>Estacionamientos premiun, lugares con estilo, eleva tu experiencia de reserva con establecimientos modernos y comodos</p>
-                            
-                        </div>
-                        <div class="Cuadros">
-                            <h2>Comodidad</h2>
-                            <p>Los estacionamientos más cómodos para tu vehiculo, reserva lo mejor para tu vehículo</p>
-                            
-                        </div>
-                    </div>
+                </div>
+        
+
+               
                     
-                </div>
+           
                 
 
 
@@ -135,25 +185,67 @@
     </head>
 
 
+
     <section id="Ola_caracteristicas">
 
         <div class = "Olas" style ="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-71.95,-1.45 C286.96,318.27 438.20,-56.72 559.53,80.44 L574.77,213.66 L0.00,150.00 Z" style="stroke: none; fill: rgb(0, 0, 0);"></path></svg></div>
 
 
     </section>
+<!--nuestros segmentos-->
 
+<section id="Segmentos">
+    <div class="container">
+        <div class="titulo">
+            <h2 class="title"><b>NUESTROS SEGMENTOS</b></h2>
+            <h2>Tú decides donde formar parte</h2>
+        </div>
+        <div class="contenido">
+
+            <div class="Conductor">
+                <div class="img-parkero"></div>
+                <div class="texto">
+                    <h2>CONDUCTOR</h2>
+                    <p>
+                        ¿Buscas estacionamientos? Encuentra los mejores estacionamientos para tu vehiculo accediendo como conductor. Accede a los beneficios de formar parte de esta familia. 
+                   </p>
+                   <a href="PARKEA.html">
+                    <button><strong>Saber más</strong></button>
+                </a> 
+
+                </div>
+
+               
+            </div>
+
+            <div class="arredandor">
+                <div class="texto">
+                    <h2>ARRENDADOR</h2>
+                    <p>
+                        Unete ahora a nuestro equipo, siendo socio gana dinero extra arrendando un establecimiento que tengas disponible para convertirlo en un estacionamiento. 
+                    </p>
+                    <a href="GANA.html">
+                        <button><strong>Saber más</strong></button>
+                      </a> 
+
+                </div>
+                <div class="img-arrendador"></div>
+            </div>
+           
+
+        </div>
+    </div>
+    <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-69.13,-5.41 C193.28,193.92 204.00,-18.23 500.00,49.98 L527.93,176.16 L0.00,150.00 Z" style="stroke: none; fill: rgb(0, 214, 125);"></path></svg></div>
+</section>
 
 <!--Testimonios-->
 
 
 <section id="thirdsection-1">
 
-
-
-
     <div class="Testimonios_texto">
-        <h1>Testimonios</h1>
-        <p>Comentarios que nos avalan</p>
+        <h1>TESTIMONIOS</h1>
+        <p>COMENTARIOS QUE NOS AVALAN</p>
     </div>
 
  <div class="container">

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="Icon" href="image/Logo_verde.png">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <script src="//code.tidio.co/pxx6shjqpekorbhbuiwhzwyx9l73tmqj.js" async></script>
 </head>
 <body>
     <!-- Barra de navegación-->
@@ -19,19 +20,56 @@
                 <h2 class="nombre-empresa">SAFE PARKING</h2>
             </a>
         </div>
-
         <nav class="menu">
-            <nav class="menu">
-                <a href="Index.html" class="nav-link">INICIO</a>
-                <a href="NOSOTROS.html" class="nav-link">NOSOTROS</a>
-                <a href="PROYECCIONES.html" class="nav-link">PROYECCIONES</a>
-                <a href="PARKEA.html" class="nav-link">PARKEA YA!</a>
-                <a href="GANA.html" class="nav-link">GANA CON NOSOTROS</a>
-                <a href="CONTACTANOS.html" class="nav-link">CONTÁCTANOS</a>            
-            </nav>
+            <input type="checkbox" id ="check">
+            <label for ="check" class = "checkbtn"> 
+
+                <i class="fa-solid fa-bars"></i>
+
+            </label>
+            <ul>
+                <li><a href="Index.html" class="nav-link">INICIO</a>
+                    <ul>
+                        <li><a href="#Slogan-Inicial" class="sub-nav-link">Home</a></li>
+                        <li><a href="#Caracteristicas" class="sub-nav-link">Caracteristicas</a></li>
+                        <li><a href="#Segmentos" class="sub-nav-link">Segmentos</a></li>
+                        <li><a href="#thirdsection-1" class="sub-nav-link">Testimonios</a></li>
+                    </ul>   
+                </li>
+                <li><a href="NOSOTROS.html" class="nav-link">NOSOTROS</a>
+                    <ul>
+                        <li><a href="#fivesection" class="sub-nav-link">Nosotros</a></li>
+                        <li><a href="#secondsection" class="sub-nav-link">Vision y Mision</a></li>
+                        <li><a href="#plana" class="sub-nav-link">Desarrolladores</a></li>
+                    </ul>   
+                </li>
+                <li><a href="PROYECCIONES.html" class="nav-link">PROYECCIONES</a>
+                    <ul>
+                        <li><a href="#sevensection01" class="sub-nav-link">Satisfacer</a></li>
+                        <li><a href="#sevensection02" class="sub-nav-link">Top</a></li>
+                    </ul> 
+                </li>
+                <li><a href="CONTACTANOS.html" class="nav-link">CONTÁCTANOS</a>
+                    <ul>
+                        <li><a href="#doceavsection" class="sub-nav-link">Registro</a></li>
+                        <li><a href="#treceavsection" class="sub-nav-link">Ubicanos</a></li>
+                    </ul> 
+                </li>
+                <li>
+                    <div>
+                        <a href="CONTACTANOS.html" class="sub-nav-link"> USUARIOS</a>              
+                    </div>
+                    <ul>
+                        <li><a href="GANA.html" class="sub-nav-link">Arrendador</a></li>
+                        <li><a href="PARKEA.html" class="sub-nav-link">Conductor</a></li>
+                    </ul> 
+                </li>
+            </ul>
+            
+        </nav>
     </div>
 
-    <section id="eightsection">
+    <section id="dmosection00">
         <div class="container">
             <div class="presentation">
                 <h2 class="title inicial"><b>Gana con nosotros</b></h2>
@@ -89,82 +127,88 @@
 
 
     <section id="oncevosection">
-        <form class="form">
-            <h2 class="form_title">Registra tu <br> Estacionamiento</h2>
-            <div class="form_container">
-                <div class="Datos">
+        <div class="container">
+            <div class="imgen_07"></div>
+
+            <form class="form">
+                <h2 class="form_title">Registra tu <br> Estacionamiento</h2>
+                <div class="form_container">
+                    <div class="Datos">
+                        <div class="form_group">
+                            <input type="text" id="name" class="form_imput" placeholder=" ">
+                            <label for="Nombre" class="form_label">Nombre</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="apellido" class="form_imput" placeholder=" ">
+                            <label for="Apellido" class="form_label">Apellido</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    
                     <div class="form_group">
-                        <input type="text" id="name" class="form_imput" placeholder=" ">
-                        <label for="Nombre" class="form_label">Nombre</label>
+                        <input type="text" id="Email" class="form_imput" placeholder=" ">
+                        <label for="Email" class="form_label">Email</label>
                         <span class="form_line"></span>
                     </div>
+                    
                     <div class="form_group">
-                        <input type="text" id="apellido" class="form_imput" placeholder=" ">
-                        <label for="Apellido" class="form_label">Apellido</label>
-                        <span class="form_line"></span>
-                    </div>
-                </div>
-                
-                <div class="form_group">
-                    <input type="text" id="Email" class="form_imput" placeholder=" ">
-                    <label for="Email" class="form_label">Email</label>
-                    <span class="form_line"></span>
-                </div>
-                
-                <div class="form_group">
-                    <input type="text" id="telefono" class="form_imput" placeholder=" ">
-                    <label for="Teléfono" class="form_label">Teléfono</label>
-                    <span class="form_line"></span>
-
-                </div>
-                <div class="form_group">
-                    <input type="text" id="Direccion" class="form_imput" placeholder=" ">
-                    <label for="Dirección" class="form_label">Dirección</label>
-                    <span class="form_line"></span>
-
-                </div>
-               
-                <div class="form_group">
-                    <input type="text" id="Linea" class="form_imput" placeholder=" ">
-                    <label for="Línea" class="form_label">Línea 2 de la dirección postal</label>
-                    <span class="form_line"></span>
-
-                </div>
-
-                <div class="Datos">
-                    <div class="form_group">
-                        <input type="text" id="Ciudad" class="form_imput" placeholder=" ">
-                        <label for="Ciudad" class="form_label">Ciudad</label>
+                        <input type="text" id="telefono" class="form_imput" placeholder=" ">
+                        <label for="Teléfono" class="form_label">Teléfono</label>
                         <span class="form_line"></span>
     
                     </div>
                     <div class="form_group">
-                        <input type="text" id="Región" class="form_imput" placeholder=" ">
-                        <label for="Región" class="form_label">Región/Estado/Provincia</label>
-                        <span class="form_line"></span>
-                    </div>
-                </div>
-                <div class="Datos">
-                    <div class="form_group">
-                        <input type="text" id="código" class="form_imput" placeholder=" ">
-                        <label for="código" class="form_label">código postal</label>
+                        <input type="text" id="Direccion" class="form_imput" placeholder=" ">
+                        <label for="Dirección" class="form_label">Dirección</label>
                         <span class="form_line"></span>
     
                     </div>
+                   
                     <div class="form_group">
-                        <input type="text" id="País" class="form_imput" placeholder=" ">
-                        <label for="País" class="form_label">País</label>
+                        <input type="text" id="Linea" class="form_imput" placeholder=" ">
+                        <label for="Línea" class="form_label">Línea 2 de la dirección postal</label>
                         <span class="form_line"></span>
+    
                     </div>
+    
+                    <div class="Datos">
+                        <div class="form_group">
+                            <input type="text" id="Ciudad" class="form_imput" placeholder=" ">
+                            <label for="Ciudad" class="form_label">Ciudad</label>
+                            <span class="form_line"></span>
+        
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="Región" class="form_imput" placeholder=" ">
+                            <label for="Región" class="form_label">Región/Estado/Provincia</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="Datos">
+                        <div class="form_group">
+                            <input type="text" id="código" class="form_imput" placeholder=" ">
+                            <label for="código" class="form_label">código postal</label>
+                            <span class="form_line"></span>
+        
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="País" class="form_imput" placeholder=" ">
+                            <label for="País" class="form_label">País</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <input type="submit" class="form_submit" value="Registrarse">
+    
                 </div>
-                <input type="submit" class="form_submit" value="Registrarse">
+                
+            </form> 
 
-            </div>
-            
-        </form> 
-        <div class="imgen_07"></div>
+   
+
+        </div>
+       
     </section>
-  
 <!--Footer-->
 <footer>
     <div class="container">
