@@ -186,7 +186,6 @@ button{
 #Slogan-Inicial .container .image-download{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 
 }
 .img-1{
@@ -1883,6 +1882,21 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 
 
     /*Inicio--------------------*/
+
+
+    /*Interfaz inicial*/
+
+
+    #Slogan-Inicial .container .image-download{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 0%;
+        margin-right: 20px;
+        margin-left: 20px;
+    
+    }
 
     /*Caracteristicas*/
     #Caracteristicas .container .imagenPrincipal img{
