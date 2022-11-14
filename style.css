@@ -37,7 +37,7 @@ ul{list-style: none;}
     position: fixed;
     z-index: 10;
     height: auto;
-    
+    min-width: 475px;
     /*
     display: flex;
     flex-wrap: wrap;*/
@@ -1176,6 +1176,7 @@ footer .Copyright hr{
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
+    min-width: 475px;
 
 }
 #eightsection .presentation h2{
@@ -1196,7 +1197,7 @@ footer .Copyright hr{
     background-position: center ;
     background-size: cover;
     background-repeat: no-repeat;
-
+    min-width: 475px;
     
 }
 #ninesection .container{
@@ -1303,6 +1304,7 @@ footer .Copyright hr{
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
+    min-width: 475px;
 }
 #ninesection02 .container{
     display: flex;
@@ -1355,6 +1357,7 @@ footer .Copyright hr{
     background-repeat: no-repeat;
     display: flex; 
     justify-content: center;
+    min-width: 475px;
     
 }
 
@@ -1376,7 +1379,7 @@ footer .Copyright hr{
     background:#000000;
     background-size: cover;
     background-repeat: no-repeat;
-    
+    min-width: 475px;
 }
 #dmosection p{
 
@@ -1432,7 +1435,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     background:#000000;
     background-size: cover;
     background-repeat: no-repeat;
-
+    min-width: 475px;
 }
 #planes .container{
     display: flex;
@@ -1552,6 +1555,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     background:#000000;
     background-size: cover;
     background-repeat: no-repeat;
+    min-width: 475px;
 }
 #oncevosection .form{
     background-color: #ffffff;
@@ -1686,6 +1690,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     text-align: center;
     background-position: center center;
     height:950px;
+    min-width: 475px;
     background: #232526;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -1694,6 +1699,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     background-repeat: no-repeat;
     color: white;
     flex-wrap: wrap;
+    
 }
 #doceavsection .title{
     color: #30e298;
@@ -1701,6 +1707,8 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 
 #doceavsection .presentation{
     margin-top: 80px;
+    min-width: 475px;
+    
 }
 #form_01{
     background-color: #131212;
@@ -1710,7 +1718,6 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     margin-right: -5%;
     box-shadow: o 5px 10px -5px rgb(48, 48, 48);
     flex-wrap: wrap;
-
 }
 #form_01 .form_paragrah{
     font-weight: 300;
@@ -1820,7 +1827,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     flex-wrap: wrap;
-    
+    min-width: 475px;
 }
 
 /*
@@ -2090,6 +2097,16 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
         width: 700px;
         height: 500px;
     }
+
+    /*Parkea Ya*/
+
+    #ninesection .foto-perfil_3{
+        display: none;
+    }
+    #ninesection02 .foto-perfil_4{
+        display: none;
+    }
+
     /*Contactanos--------------*/
 
 
