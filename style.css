@@ -13,6 +13,7 @@
 body{
     text-align: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    
  
 }
 html{
@@ -35,6 +36,7 @@ ul{list-style: none;}
     background-color: rgb(0, 0, 0);
     position: fixed;
     z-index: 10;
+    height: auto;
     
     /*
     display: flex;
@@ -74,11 +76,9 @@ nav ul li{
 
 
 nav a:hover{
-    color: #30e298;
-    border-bottom: 4px solid #30e298;
-    transition: .5s;
-
-    background-color: #5c5b5b;
+    background: #585858;
+    cursor: pointer;
+    color: white;
 }
 nav li li a{
     background-color:#30e298;
@@ -137,8 +137,11 @@ button{
      cursor: pointer;
 }
 
-.button:hover{
+.download-app button:hover{
+    background: #757575;
     cursor: pointer;
+    color: white;
+    transition: .5s;
 }
 
 
@@ -159,6 +162,7 @@ button{
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    
     
 }
 #Slogan-Inicial .container{
@@ -182,6 +186,8 @@ button{
 #Slogan-Inicial .container .image-download{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+
 }
 .img-1{
     width: 207px;
@@ -216,7 +222,7 @@ button{
 
 #Caracteristicas {
     display: flex; 
-    height:1000px;
+    height:auto;
 
     background: linear-gradient(to bottom, rgb(0, 214, 125), rgb(30, 209, 155));
     background-size: cover;
@@ -225,12 +231,13 @@ button{
     justify-content: center;
     text-align: center;
     background-position:  center;
-
-
+    
 }
 
 #Caracteristicas .contenido{
     display: flex;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 #Caracteristicas .container .imagenPrincipal img{
     width: 600px;
@@ -341,6 +348,7 @@ button{
     text-align: center;
     margin-bottom: 90px;
     height: 550px;
+    width: auto;
 
 }
 #Segmentos  .Conductor {
@@ -349,6 +357,7 @@ button{
     justify-content: center;
     text-align: center;
     margin-left: 200px;
+    display: flex;
 
 }
 
@@ -407,10 +416,6 @@ margin-right: 90px;
     display: flex;
     grid-area: img-arrendador;
 }
-#Segmentos .Conductor{
-    display: flex;
-}
-
 .img-arrendador{
     background-image: url("image/Arrendador.jpg");
 }
@@ -421,8 +426,18 @@ margin-right: 90px;
 .arredandor button{
     margin-right: 95px;
 }
-
-
+.Conductor button:hover{
+    background: #757575;
+    cursor: pointer;
+    color: white;
+    transition: .5s;
+}
+.arredandor button:hover{
+    background: #757575;
+    cursor: pointer;
+    color: white;
+    transition: .5s;
+}
 /*
 .img-arrendador::after{
     content: "Gana con nosotros!";
@@ -447,8 +462,6 @@ margin-right: 90px;
 */
 .img-parkero{
     background-image: url("image/ConductorInicio.jpg");
-    margin-right: 180px;
-    
 }
 /*
 .img-parkero::after{
@@ -481,11 +494,10 @@ margin-right: 90px;
 /*Testimonios-------------*/
 
 #thirdsection-1{
-    height: 830px;
+    height: auto;
     background: linear-gradient(to bottom, rgb(0, 214, 125), rgb(30, 209, 155));
     margin: auto;
     background-size: cover;
-    
 }
 
 #thirdsection-1 .container{
@@ -493,6 +505,7 @@ margin-right: 90px;
     display: flex;
     justify-content: center;
     margin-top: 80px;
+    flex-wrap: wrap;
 }
 
 #thirdsection-1 .Testimonios_texto .h1{
@@ -633,6 +646,9 @@ margin-right: 90px;
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: auto;
+    height: auto;
+    
     
 }
 #fivesection .container{
@@ -642,6 +658,8 @@ margin-right: 90px;
     padding: 0px 30px;
     top: -60px;
     justify-content: center;
+    width: auto;
+    flex-wrap: wrap;
 
 }
 #fivesection  .nosotros{
@@ -650,14 +668,16 @@ margin-right: 90px;
     align-items: center;
     justify-content: center;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 
 #fivesection .container .nosotros h2{
   
     text-align: center;
-    padding-right: 400px;
+    padding-right: 430px;
     margin-bottom: 20px;
+    
 
 }
 
@@ -668,7 +688,6 @@ margin-right: 90px;
     max-width: 700px;
     display: flex;
     justify-content: center;
-    flex-direction: column;
 
 }
 
@@ -680,7 +699,7 @@ margin-right: 90px;
     margin-right: 80px;
     height: 400px;
     width: 400px;
-
+    flex-wrap: wrap;
 }
 
 
@@ -689,10 +708,11 @@ margin-right: 90px;
 #secondsection{
     height: 600px;
     /*background-color: #30e298;*/
-    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(97, 97, 97));
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 0));
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
+
 
 }
 #secondsection .container{
@@ -702,6 +722,7 @@ margin-right: 90px;
     padding: 0px 30px;
     top: -60px;
     justify-content: center;
+    
 }
 #secondsection h2{
     margin: 10px;
@@ -739,6 +760,7 @@ margin-right: 90px;
 #secondsection .mision{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 #secondsection .texto-mision{
     width: 85%;
@@ -761,6 +783,7 @@ margin-right: 90px;
 #secondsection .vision{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     
 }
 #secondsection .texto-vision{
@@ -777,13 +800,14 @@ margin-right: 90px;
 /*Desarrolladores-----*/
 
 #plana{
-    height: 760px;
+    height: auto;
+    /* height: 760px; */
     background: linear-gradient(to bottom,  rgb(30, 209, 155), rgb(0, 214, 125));
     margin: auto;
 
     
 }
-
+/*
 #plana .image-testimonio1{
     display: flex;
     flex-direction: column;
@@ -797,8 +821,9 @@ margin-right: 90px;
     /*background-image:url("image/conductor.jpg");
     background-size: cover;
     background-repeat: no-repeat;*/
+    /*
 }
-
+*/
 #plana .title{
     color: #000000;
     margin-top: 80px;
@@ -809,6 +834,7 @@ margin-right: 90px;
     display: flex;
     justify-content: center;
     margin-top: 80px;
+    flex-wrap: wrap;
 }
 #plana .testimonio{
     width: 270px;
@@ -823,6 +849,7 @@ margin-right: 90px;
     border-radius: 10px;
     color: rgb(255, 255, 255);
     /*box-shadow: 0px 0px 20px 5px white;*/
+    
 }
 .foto-perfil_01,.foto-perfil_02,.foto-perfil_03, .foto-perfil_04 , .foto-perfil_05{
     width: 120px;
@@ -976,6 +1003,45 @@ footer .Copyright hr{
 }*/
 
 /*Proyecciones--------------*/
+#Proyecciones{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-position: center ;
+    height:auto;
+    color: rgb(0, 0, 0);
+    background-color: #a77c7c;
+    background-size: cover;
+}
+
+#Proyecciones .titulo h2{
+    margin: 0;
+    font-size: 32px;
+    color: #30e298;
+}
+#Proyecciones .titulo h3{
+    margin: 0;
+    font-size: 20px;
+    color: #000000;
+}
+#Proyecciones .foto-satisfacer{
+    background-image:url("image/satisfacer.png");
+    width: 600px;
+    margin: 20px;
+    padding: 150px;
+    text-align: center;
+    margin-bottom: 200px;
+}
+#Proyecciones .foto-top{
+    background-image:url("image/top.png");
+    width: 600px;
+    margin: 20px;
+    padding: 150px;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
 
 #sevensection{
     display: flex; 
@@ -983,8 +1049,8 @@ footer .Copyright hr{
     justify-content: center;
     text-align: center;
     background-position: center ;
-    height:200px;
-    color: rgb(0, 0, 0);
+    height:230px;
+    color: #30e298;
     background-color: #000000;
     background-size: cover;
 
@@ -999,7 +1065,7 @@ footer .Copyright hr{
 
     height:auto;
     color: rgb(0, 0, 0);
-    background-color: #030303;
+    background-color: #000000;
     background-size: cover;
     
 
@@ -1011,6 +1077,8 @@ footer .Copyright hr{
     padding: 0px 30px;
     top: -60px;
     justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
 }
 
 
@@ -1059,6 +1127,8 @@ footer .Copyright hr{
     justify-content: center;
     align-items: center;
     background-position: center ;
+    flex-wrap: wrap;
+    height: auto;
 
 }
 
@@ -1086,6 +1156,7 @@ footer .Copyright hr{
     padding: 100px;
     text-align: center;
     background-image: linear-gradient(to top, #007adf 0%, #00ecbc 100%);
+    flex-wrap: wrap
 }
 
 
@@ -1112,6 +1183,7 @@ footer .Copyright hr{
 
     background-size: cover;
     background-repeat: no-repeat;
+    height: auto;
 
 }
 #eightsection .presentation h2{
@@ -1124,7 +1196,7 @@ footer .Copyright hr{
 }
 #ninesection{
 
-    height: 300px;
+    height: auto;
     background:#000000;
     align-items: center;
     justify-content: center;
@@ -1238,6 +1310,7 @@ footer .Copyright hr{
     background:#000000;
     background-size: cover;
     background-repeat: no-repeat;
+    height: auto;
 }
 #ninesection02 .container{
     display: flex;
@@ -1247,6 +1320,7 @@ footer .Copyright hr{
     justify-content: center;
     align-items: center;
     background-position: center ;
+    height: auto;
 }
 
 #ninesection02 .foto-perfil_4{
@@ -1353,8 +1427,8 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 
 }
 #dmosection p{
-    padding: 0px 80px;
-    max-width: 700px;
+    padding: 0 30px;
+    max-width: 900px;
     margin-left: 10%;
 
 }
@@ -1362,7 +1436,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 #planes{
 
 
-    height: 650px;
+    height: auto;
     background:#000000;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1371,6 +1445,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 #planes .container{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 #planes .titulo-planes{
@@ -1392,6 +1467,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     max-width: 1400px;
     margin: auto;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #planes .tabla{
@@ -1460,14 +1536,14 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     padding: 10px;
     font-size: 1em;
     margin-top: 90px;
-    margin-bottom: 20px;
 
 }
 
 .enlace:hover{
-    background: #585858;
+    background: #757575;
     cursor: pointer;
     color: white;
+    transition: .5s;
 }
 
 .link-footer{
@@ -1480,20 +1556,21 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 }
 
 #oncevosection{
-    height: 1000px;
+    height: auto;
     background:#000000;
     background-size: cover;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
 #oncevosection .form{
     background-color: #ffffff;
-    width: 100vh;
+    width: auto;
     max-width: 800px;
     padding: 4.5em 3em;
     border-radius: 10px;
     box-shadow: o 5px 10px -5px rgba(0, 0, 0, 0.3);
     left: 500px;
     margin-bottom: 150px;
+    margin-top: 100px;
 }
 
 #oncevosection .form .form_title{
@@ -1502,7 +1579,6 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     color: #000000;
 
 }
-
 
 .form_paragrah{
     font-weight: 300;
@@ -1515,6 +1591,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     margin-top: 3em;
     display: grid;
     gap: 2.5em;
+    flex-wrap: wrap
 }
 .form_group{
  position: relative;
@@ -1555,19 +1632,23 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     color:#2ef1c7;
 }
 .form_submit{
-    font-size: 0.5em;
+    font-size: 15px;
     font-weight: bold;
     padding:10px 20px;
     border-radius: 10px;
     border:2px solid rgba(0,0,0,0.5);
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    color: white;
+    color: rgb(0, 0, 0);
     background-color: #30e298;
      margin: 30px;
 
 }
 .form_submit:hover{
-    background-color: #2ef1c7;
+    background: #757575;
+    cursor: pointer;
+    color: white;
+    transition: .5s;
+    
 }
  .form_line{
     position: absolute;
@@ -1620,22 +1701,23 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
-
+    flex-wrap: wrap;
 }
 #doceavsection .title{
     color: #30e298;
 }
 
-
+#doceavsection .presentation{
+    margin-top: 80px;
+}
 #form_01{
     background-color: #131212;
-    width: 10000000000vh;
-    max-width: 600px;
+    width: auto;
     padding: 4.5em 3em;
     border-radius: 10px;
     margin-right: -5%;
     box-shadow: o 5px 10px -5px rgb(48, 48, 48);
- 
+    flex-wrap: wrap;
 
 }
 #form_01 .form_paragrah{
@@ -1745,6 +1827,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     background: #232526;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    flex-wrap: wrap;
     
 }
 
@@ -1798,50 +1881,110 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
         left:0;
     }
 
+
+    /*Inicio--------------------*/
+
+    /*Caracteristicas*/
     #Caracteristicas .container .imagenPrincipal img{
         display: none;
     }
-
+    #Caracteristicas .container{
+        justify-content: center;
+        align-items: center;
+    }
     #Caracteristicas{
         height: auto;
+        
     }
     #Caracteristicas .container .Cuadrados{
+        margin: auto;
+        align-items: center;
+        flex-direction: column;
+        
+        display: block;
+    }
+    #Caracteristicas .container .contenido{
         margin-top:  auto;
         margin-left: auto;
     }
-    /*
-    #Caracteristicas .container .Cuadrados .Seccion .Cuadros h2{
-        font-size: 25px;
-        color: rgb(0, 0, 0);
-        text-align: center;
-        margin-left: -24px;
-        margin-top: -50px;
-    }
-    
-    */
-    
     #Caracteristicas .container .Cuadrados .Seccion .Cuadros p{
     
-        display: none;
+        /* display: none; */
         
     }
-    */
-    #Caracteristicas .Cuadrados .Seccion{
-        width: auto;
-        height: auto;
-        
-        margin: 15px;
-        padding: 75px;
+    #Caracteristicas .container .Cuadrados .Seccion{
         text-align: center;
-
+        align-items: center;
         display: block;
-    }
-    #Caracteristicas .Cuadrados .Seccion .Cuadros{
+        margin: auto;
+        /* display: block; */
         width: auto;
-        height: auto;
+    }
+    #Caracteristicas .container .Cuadrados .Seccion .Cuadros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        margin-top: 20px;
+        width: auto;
         
     }
-    
+/*Segmentos*/
+
+.img-arrendador{
+    display: none;
+   }
+   .img-parkero{
+    display: none;
+   
+   }
+
+   #Segmentos .container{
+       justify-content: center;
+       align-items: center;
+       height: auto;
+       
+   }
+
+   #Segmentos  .arredandor {
+       text-align: center;
+       align-items: center;
+       justify-content: center;
+       width: auto;
+        margin: auto;
+
+
+   
+   }
+   #Segmentos  .Conductor {
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+       display: flex;
+       margin: auto;
+   
+   }
+
+   #Segmentos .container .contenido .arredandor .texto{
+       text-align: center;
+       align-items: center;
+       justify-content: center;
+       margin: auto;
+       padding-left: 20%;
+
+   
+   }
+   #Segmentos  .container .contenido  .Conductor  .texto{
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+       margin: auto;
+
+       padding: 0%;
+       
+   }
+    /*Testimonios*/
+
     #thirdsection-1 .container{
         flex-direction: column;
     }
@@ -1854,34 +1997,82 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
         height:auto;
         display: block;
     }
+
+    /*Nosotros--------------------*/
+
     
-    #plana .container{
-        flex-direction: column;¿
-    }
-
-    #plana {
-        height: auto;
-        
-    }
-
-    #secondsection .mision .imagen-mision{
-    display: none;
-    }
-    #secondsection .vision .imagen-vision{
-    display: none;
-    }  
+    
+    /*Nosotros*/
     #fivesection .img-container{
         display: none;
     }
-    #fivesection .title_inicial{
-        text-align: center;
+    #fivesection .container{
+        margin: auto;
     }
-   #fivesection .container{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+
+    #fivesection .container .nosotros  h2{
+        text-align: center;
+        padding: 0%;
+    }
+
+   #fivesection .container .nosotros  p{
+        text-align: center;
+        justify-content: center;
+        padding: 0%;
    }
 
+   /*Mision y Vision*/
+
+
+   #secondsection .mision .imagen-mision{
+    order: 2;
+    }
+    /*
+    #secondsection .vision .imagen-vision{
+    display: none;
+    }  */
+   .mision-vision .texto-mision p{
+        text-align: center;
+        order: 1;
+    }
+    .mision-vision .texto-vision p{
+        text-align: center;
+    }
+    
+   /*Desarrolladores*/
+   #plana .container{
+    flex-direction: column;
+    }
+
+    #plana {
+    height: auto;
+    }
+
+    #plana .container .testimonio {
+        align-items: center;
+        width: auto;
+    }
+
+    /*Gana con nosotros*/
+
+    #dmosection .foto-perfil_5{
+        display: none;
+    }
+    #dmosection .libre_casa{
+        width: 700px;
+        height: 500px;
+    }
+    /*Contactanos--------------*/
+
+
+    #treceavsection {
+        display: none;
+    }
+    #treceavsection .mapa{
+        display: none;
+    }
+
+    /*Footer----------------------*/
     footer{
         height: auto;
     }
