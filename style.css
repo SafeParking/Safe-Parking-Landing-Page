@@ -133,8 +133,8 @@ button{
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     color: rgb(0, 0, 0);
     background-color: #30e298;
-     margin: 30px;
-     cursor: pointer;
+    margin: 30px;
+    cursor: pointer;
 }
 
 .download-app button:hover{
@@ -153,7 +153,7 @@ button{
     background-position: center center;
     height:1000px;
     color: white;
-    min-width: 250px;
+    min-width: 475px;
     width: 100%;
     background:rgb(30, 209, 155);
     background: -webkit-linear-gradient(to right, #07181f69, #34e89d86), url("image/Fondo2.png"); 
@@ -189,16 +189,16 @@ button{
 
 }
 .img-1{
-    width: 207px;
+    width: 210px;
     height: 60.5px;
     border-radius: 5px;
-    margin-right: 20px;
+    padding-right: 10px;
 }
 .img-2{
-    width: 207px;
+    width: 210px;
     height: 60.5px;
     border-radius: 5px;
-    margin-left: 20px;
+    padding-left: 10px;
     /*
     box-shadow: 0px 0px 30px -5px rgb(255, 255, 255);
     */
@@ -230,7 +230,7 @@ button{
     justify-content: center;
     text-align: center;
     background-position:  center;
-    
+    min-width: 475px;
 }
 
 #Caracteristicas .contenido{
@@ -251,6 +251,7 @@ button{
     bottom: 1;
     width: 100%;
     margin-top: -50px;
+    min-width: 475px;
 }
 
 #Ola_caracteristicas .Olas{
@@ -331,7 +332,7 @@ button{
     background-color: #000000;
     margin: auto;
     height: auto;
-
+    min-width: 475px;
     
 }
 #Segmentos .container{
@@ -497,6 +498,7 @@ margin-right: 90px;
     background: linear-gradient(to bottom, rgb(0, 214, 125), rgb(30, 209, 155));
     margin: auto;
     background-size: cover;
+    min-width: 475px;
 }
 
 #thirdsection-1 .container{
@@ -647,7 +649,7 @@ margin-right: 90px;
     text-align: center;
     width: auto;
     height: auto;
-    
+    min-width: 475px;
     
 }
 #fivesection .container{
@@ -711,7 +713,7 @@ margin-right: 90px;
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
-
+    min-width: 475px;
 
 }
 #secondsection .container{
@@ -897,7 +899,8 @@ footer {
     height: 300px;
     background-color: #000000;
     margin-top: auto;
-    padding: 20px
+    padding: 20px;
+    min-width: 475px;
 }
 footer .container{
     display: flex; /*Columnas una de otras*/
@@ -1845,6 +1848,19 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 
 }
 
+/*
+@media (max-width: 420px) {
+    
+    #Slogan-Inicial .container .image-download .img-1{
+        padding-right: 0%;
+    }
+    #Slogan-Inicial .container .image-download .img-2{
+        padding-left: 0%;
+    }
+
+
+}
+*/
 @media(max-width: 720px){
     .checkbtn{
         display: block;
@@ -1891,10 +1907,6 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin: auto;
-        padding: 0%;
-        margin-right: 20px;
-        margin-left: 20px;
     
     }
 
