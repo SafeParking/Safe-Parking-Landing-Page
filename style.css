@@ -853,6 +853,7 @@ button{
     justify-content: center;
     margin-top: 80px;
     flex-wrap: wrap;
+    height: auto;
 }
 #plana .testimonio{
     width: 270px;
@@ -865,10 +866,21 @@ button{
     background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 10px;
-    color: rgb(255, 255, 255);
     /*box-shadow: 0px 0px 20px 5px white;*/
     
 }
+
+#plana .testimonio h3{
+    color: rgb(30, 209, 155);
+}
+#plana .testimonio {
+    color: white;
+}
+
+#plana .testimonio li{
+    color: white;
+}
+
 .foto-perfil_01,.foto-perfil_02,.foto-perfil_03, .foto-perfil_04 , .foto-perfil_05{
     width: 120px;
     height: 130px;
@@ -878,7 +890,6 @@ button{
     border-radius: 25%;
     position: relative;
     top: -20px;
-    box-shadow: 0px 0px 30px -5px rgb(255, 255, 255);
 }
 #plana .foto-perfil_01{
     background-image: url("image/jhon.png");
@@ -1464,7 +1475,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     text-align: center;
     font-size: 1em;
     margin: 0;
-    padding-top: 50px;
+    padding: 50px;
     color: #30e298;
 }
 
@@ -1484,13 +1495,12 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 
 #planes .tabla{
     width: 400px;
-    height: 400px;
+    height: 500px;
     margin-top: 30px;
     margin-bottom: 30px;
     color: black;
     margin: 12px;
     border-radius: 15px;
-    box-shadow: 0px 0px 20px -5px black;
 
 }
 .tabla:nth-child(1){
