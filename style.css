@@ -659,8 +659,6 @@ button{
 
 #fivesection {
     background: linear-gradient(to bottom, rgb(0, 214, 125), rgb(30, 209, 155));
-    background-size: cover;
-    background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -673,16 +671,15 @@ button{
     display: flex;
     text-align: center;
     align-items: center;
-    padding: 0px 30px;
-    top: -60px;
     justify-content: center;
     width: auto;
     flex-wrap: wrap;
+    height: auto;
 
 }
 #fivesection  .nosotros{
     text-align: left;
-    padding: 200px 100px;
+    padding: 175px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -692,18 +689,14 @@ button{
 
 #fivesection .container .nosotros h2{
   
-    text-align: center;
-    padding-right: 430px;
-    margin-bottom: 20px;
-    
+    text-align: left;
+    padding-bottom: 50px;
 
 }
 
 #fivesection .container .nosotros p{
-    width: 85%;
     text-align: justify;
-    padding: 0px 30px;
-    max-width: 700px;
+    max-width: 500px;
     display: flex;
     justify-content: center;
 
@@ -1866,6 +1859,12 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     margin-top: 80px;
 }
 */
+
+/*Chat box-----------------------*/
+
+
+
+
 /*Responsive-------*/
 
 @media screen and (max-width: 999px){
@@ -2007,13 +2006,11 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 
     #fivesection .container .nosotros  h2{
         text-align: center;
-        padding: 0%;
     }
 
    #fivesection .container .nosotros  p{
         text-align: center;
         justify-content: center;
-        padding: 0%;
    }
 
    /*Mision y Vision*/
